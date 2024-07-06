@@ -1,0 +1,413 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Formal font */
+    font-size: 18px; /* Increased font size */
+    margin: 0;
+    padding: 0;
+    background-color: #0ffce8; /* Set your desired background color */
+}
+
+/* Header styling */
+header {
+    background: #200264;
+    color: #fff;
+    padding: 5px 5px;
+    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center align items vertically */
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 10px; /* Padding for inner space */
+    box-sizing: border-box; /* Include padding in max-width calculation */
+}
+
+header h1 {
+    font-size: 1.4em; /* Adjusted font size */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Make name bold */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Use same font as navigation */
+    padding-right: 10px; /* Adjust spacing between name and navigation */
+}
+
+/* Navigation styling */
+nav {
+    background: #6759df;
+    padding: 8px 20px; /* Adjusted padding */
+    border-radius: 15px; /* Rounded edges */
+    width: auto; /* Auto width based on content */
+    max-width: 80%; /* Maximum width for navigation */
+    margin: 10px auto; /* Center navigation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center align navigation links */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjusted spacing */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Adjusted padding */
+    border-radius: 5px; /* Rounded edges for links */
+    font-weight: bold; /* Make links bold */
+}
+
+nav ul li a:hover {
+    background: #12e4d9;
+}
+
+/* Main content styling */
+main {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Intro section styling */
+.intro {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background: #fff; /* White background for contrast */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1000px; /* Maximum width for the section */
+    margin: 20px auto; /* Center horizontally with vertical margin */
+}
+
+.intro-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+}
+
+.photo {
+    width: 200px; /* Set width of photo */
+    margin-right: 20px; /* Adjust margin */
+    text-align: center; /* Center align content */
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.photo p {
+    margin-top: 10px; /* Adjust margin */
+    font-weight: bold; /* Make text bold */
+}
+
+.intro-text {
+    flex: 1; /* Take remaining space */
+    text-align: left; /* Left align text */
+    padding-left: 20px; /* Add left padding */
+    color: #200264; /* Dark blue color for text */
+}
+
+/* Ensure there's space between paragraphs */
+.intro-text p {
+    margin-bottom: 15px; /* Add bottom margin between paragraphs */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+/* Bold text styling */
+.intro-text strong {
+    color: #200264; /* Dark blue color for bold text */
+}
+
+.additional-content {
+    width: 100%; /* Full width for content */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Adjust top margin */
+}
+
+.additional-content p {
+    margin-bottom: 10px; /* Adjust bottom margin */
+    font-weight: bold; /* Make text bold */
+    color: #200264; /* Dark blue color for text */
+}
+
+.social-icons {
+    text-align: center; /* Center align icons */
+    margin-top: 10px; /* Adjust margin */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px; /* Icon size */
+    color: #333; /* Dark color for icons */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+    color: #6759df; /* Hover color */
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Contact Page Styling */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the sections horizontally */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Set background to transparent */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.contact-info {
+    flex: 0 0 200px; /* Set the width to match the photo container */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add some spacing between the sections */
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    flex: 1; /* Take remaining space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(7, 2, 77, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Make the form groups take up the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align labels to the left */
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add some spacing between label and input */
+    display: flex;
+    align-items: center; /* Center align the label vertically */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    width: 100%; /* Make the input and textarea take up the full width */
+    text-align: center; /* Center the input and textarea content */
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase the height of the textarea */
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Specific styles for about.html page */
+.about-content {
+    max-width: 800px; /* Limit width of content */
+    margin: 20px auto; /* Center align with margin */
+    padding: 20px; /* Add padding */
+    background: #fff; /* White background */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: justify; /* Justify text */
+}
+
+.about-content h2 {
+    text-align: center; /* Center align headings */
+    margin-bottom: 15px; /* Bottom margin for headings */
+}
+
+.about-content p {
+    line-height: 1.6; /* Line height for readability */
+}
+
+body, .contact-info, .contact-info h2, .contact-info p, .contact-form, .contact-form h2, .contact-form label, .contact-form input, .contact-form textarea {
+    color: #200264; /* Set text color to dark blue */
+}
+button[type="submit"] {
+    background-color: #200264; /* Set button background color to dark blue */
+    color: #fff; /* Set button text color to white */
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #555; /* Set button hover background color to dark gray */
+    color: #fff; /* Set button hover text color to white */
+}
+
+/* Add a dialog box class to your HTML file */
+<div class="dialog-box">
+    <p>Message sent successfully!</p>
+</div>
+
+/* Add the following CSS rules to your style.css file */
+.dialog-box {
+    position: absolute; /* Position the dialog box absolutely */
+    top: 50%; /* Position the dialog box at the top center */
+    left: 50%; /* Position the dialog box at the left center */
+    transform: translate(-50%, -50%); /* Center the dialog box horizontally and vertically */
+    background-color: #200264; /* Set dialog box background color to dark blue */
+    padding: 20px; /* Add padding to the dialog box */
+    border: 1px solid #333; /* Add a border to the dialog box */
+    border-radius: 10px; /* Add a rounded corner to the dialog box */
+    font-size: 1.1rem; /* Set font size to 1.1rem */
+    color: #fff; /* Set dialog box text color to white */
+    display: none; /* Hide the dialog box initially */
+}
+
+/* Show the dialog box when the form is submitted */
+.contact-form form {
+    display: none; /* Hide the form initially */
+}
+
+.contact-form form::after {
+    content: "Sent!";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #200264;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    display: none;
+}
+
+/* Show the dialog box when the form is submitted */
+.contact-form form::after {
+    display: block;
+}
+/* Specific styles for project.html page */
+
+/* Project container styling */
+.project-container {
+    max-width: 1000px; /* Limit width of each project container */
+    margin: 20px auto; /* Center align with margin */
+    padding: 20px; /* Add padding */
+    background: #fff; /* White background */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: justify; /* Justify text */
+}
+
+.project-container h2 {
+    text-align: center; /* Center align headings */
+    margin-bottom: 15px; /* Bottom margin for headings */
+}
+
+.project-container p {
+    line-height: 1.6; /* Line height for readability */
+}
+
+.project-container img {
+    width: 100%; /* Make images fill their container */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Bottom margin for images */
+}
+/* Experience Container */
+.project-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.project-container .project-media {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-container .project-description {
+    flex: 2;
+}
+
+.project-container h2 {
+    margin-top: 0;
+}
+
+.project-media video {
+    width: 100%; /* Ensures video fills its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners for the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+.project-description h2 {
+    margin-bottom: 5px; /* Adjust bottom margin of heading */
+}
+
+.project-description p {
+    margin-top: 0; /* Remove default top margin of paragraph */
+    margin-bottom: 10px; /* Adjust bottom margin of paragraph */
+}
