@@ -14,14 +14,26 @@
             background-size: cover;
             background-position: center;
         }
-    </style>    
+        .success-message {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .error-message {
+            display: none;
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-content">
             <h1>Reeyansh Shah</h1>
             <nav>
-                <ul>  
+                <ul>
                     <li><a href="./">About Me</a></li>
                     <li><a href="./projects">Projects</a></li>
                     <li><a href="./experience">Experience</a></li>
@@ -39,7 +51,7 @@
                 <p><strong>Email:</strong> shah.reeyansh@gmail.com</p>
             </div>
             <div class="contact-me">
-                <form action="send_email.php" method="POST" class="contact-form">
+                <form class="contact-form" id="contact-form" onsubmit="sendEmail(event)">
                     <h2>Contact Me</h2>
                     <p>Feel free to reach out to me using the form below:</p>
                     <br> <!-- Add a line break here -->
@@ -56,6 +68,8 @@
                         <textarea id="message" name="message" rows="7" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
+                    <p class="success-message" id="success-message">Your email has been sent successfully!</p>
+                    <p class="error-message" id="error-message">There was an error sending your email. Please try again later.</p>
                 </form>
             </div>
         </section>
@@ -63,5 +77,32 @@
     <footer>
         <p>&copy; 2024 Reeyansh Shah</p>
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('sfH0pfySDFThc3KFQ'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const formData = new FormData(form);
+
+            const templateParams = {
+                from_name: formData.get('name'),
+                from_email: formData.get('email'),
+                message: formData.get('message')
+            };
+
+            emailjs.send('service_lfjb8jj', 'template_hqvqfaq', templateParams) // Replace with your actual EmailJS service ID and template ID
+                .then(function(response) {
+                    document.getElementById('success-message').style.display = 'block';
+                    document.getElementById('error-message').style.display = 'none';
+                }, function(error) {
+                    document.getElementById('error-message').style.display = 'block';
+                    document.getElementById('success-message').style.display = 'none';
+                });
+        }
+    </script>
 </body>
 </html>
