@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0ffce8; /* Set your desired background color */
+    color: #200264; /* Set text color to dark blue */
 }
 
 /* Header styling */
@@ -34,11 +35,11 @@ header {
 }
 
 header h1 {
-    font-size: 1.4em; /* Adjusted font size */
+    font-size: 18px; /* Adjusted font size */
     margin: 0; /* Remove default margin */
     font-weight: bold; /* Make name bold */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Use same font as navigation */
-    padding-right: 10px; /* Adjust spacing between name and navigation */
+    font-family: 'Times New Roman', Times, serif /* Use same font as navigation */
+    padding-10px; /* Adjust spacing between name and navigation */
 }
 
 /* Navigation styling */
@@ -281,133 +282,91 @@ footer {
 
 .about-content h2 {
     text-align: center; /* Center align headings */
-    margin-bottom: 15px; /* Bottom margin for headings */
+    margin-bottom: 15px; /* Bottom margin */
+    font-size: 24px; /* Adjusted font size */
+    color: #200264; /* Text color */
 }
 
 .about-content p {
     line-height: 1.6; /* Line height for readability */
+    margin-bottom: 10px; /* Bottom margin */
 }
 
-body, .contact-info, .contact-info h2, .contact-info p, .contact-form, .contact-form h2, .contact-form label, .contact-form input, .contact-form textarea {
-    color: #200264; /* Set text color to dark blue */
-}
-button[type="submit"] {
-    background-color: #200264; /* Set button background color to dark blue */
-    color: #fff; /* Set button text color to white */
-    border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
+/* Project Page Styling */
 
-button[type="submit"]:hover {
-    background-color: #555; /* Set button hover background color to dark gray */
-    color: #fff; /* Set button hover text color to white */
-}
-
-/* Add a dialog box class to your HTML file */
-<div class="dialog-box">
-    <p>Message sent successfully!</p>
-</div>
-
-/* Add the following CSS rules to your style.css file */
-.dialog-box {
-    position: absolute; /* Position the dialog box absolutely */
-    top: 50%; /* Position the dialog box at the top center */
-    left: 50%; /* Position the dialog box at the left center */
-    transform: translate(-50%, -50%); /* Center the dialog box horizontally and vertically */
-    background-color: #200264; /* Set dialog box background color to dark blue */
-    padding: 20px; /* Add padding to the dialog box */
-    border: 1px solid #333; /* Add a border to the dialog box */
-    border-radius: 10px; /* Add a rounded corner to the dialog box */
-    font-size: 1.1rem; /* Set font size to 1.1rem */
-    color: #fff; /* Set dialog box text color to white */
-    display: none; /* Hide the dialog box initially */
-}
-
-/* Show the dialog box when the form is submitted */
-.contact-form form {
-    display: none; /* Hide the form initially */
-}
-
-.contact-form form::after {
-    content: "Sent!";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #200264;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    color: #fff;
-    display: none;
-}
-
-/* Show the dialog box when the form is submitted */
-.contact-form form::after {
-    display: block;
-}
-/* Specific styles for project.html page */
-
-/* Project container styling */
 .project-container {
-    max-width: 1000px; /* Limit width of each project container */
-    margin: 20px auto; /* Center align with margin */
-    padding: 20px; /* Add padding */
-    background: #fff; /* White background */
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: justify; /* Justify text */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
 }
 
 .project-container h2 {
-    text-align: center; /* Center align headings */
-    margin-bottom: 15px; /* Bottom margin for headings */
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #200264;
 }
 
 .project-container p {
-    line-height: 1.6; /* Line height for readability */
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.project-container img {
-    width: 100%; /* Make images fill their container */
-    border-radius: 10px; /* Rounded corners for images */
-    margin-bottom: 10px; /* Bottom margin for images */
-}
-/* Experience Container */
-.project-container {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+.project-container .project {
+    margin-bottom: 20px; /* Add spacing between projects */
 }
 
-.project-container .project-media {
-    flex: 1;
-    margin-right: 20px;
+.project-container .project h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.project-container .project-description {
-    flex: 2;
+.project-container .project p {
+    line-height: 1.4;
+    margin-bottom: 8px;
 }
 
-.project-container h2 {
-    margin-top: 0;
+/* Experience Page Styling */
+
+.experience-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
 }
 
-.project-media video {
-    width: 100%; /* Ensures video fills its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Rounded corners for the video */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-}
-.project-description h2 {
-    margin-bottom: 5px; /* Adjust bottom margin of heading */
+.experience-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #200264;
 }
 
-.project-description p {
-    margin-top: 0; /* Remove default top margin of paragraph */
-    margin-bottom: 10px; /* Adjust bottom margin of paragraph */
+.experience-container p {
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
+
+.experience-container .experience {
+    margin-bottom: 20px; /* Add spacing between experiences */
+}
+
+.experience-container .experience h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-container .experience p {
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
