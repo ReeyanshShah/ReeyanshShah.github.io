@@ -56,8 +56,8 @@
                         <textarea id="message" name="message" rows="7" required></textarea>
                     </div>
                     <button type="submit">Send Message</button>
-                    <p class="success-message" id="success-message">Your email has been sent successfully!</p>
-                    <p class="error-message" id="error-message">There was an error sending your email. Please try again later.</p>
+                    <p class="success-message" id="success-message" style="display: none;">Your email has been sent successfully!</p>
+                    <p class="error-message" id="error-message" style="display: none;">There was an error sending your email. Please try again later.</p>
                 </form>
             </div>
         </section>
@@ -82,13 +82,15 @@
                 message: formData.get('message')
             };
 
-            emailjs.send('service_lfjb8jj', 'template_hqvqfaq', templateParams) // Replace with your actual EmailJS service ID and template ID
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
                 .then(function(response) {
                     document.getElementById('success-message').style.display = 'block';
                     document.getElementById('error-message').style.display = 'none';
-                }, function(error) {
-                    document.getElementById('error-message').style.display = 'block';
+                    form.reset(); // Optional: Clear the form after successful submission
+                })
+                .catch(function(error) {
                     document.getElementById('success-message').style.display = 'none';
+                    document.getElementById('error-message').style.display = 'block';
                 });
         }
     </script>
