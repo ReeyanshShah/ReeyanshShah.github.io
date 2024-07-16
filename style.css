@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-size: 18px; /* Adjusted font size */
+    font-size: 16px; /* Adjusted font size */
     margin: 0; /* Remove default margin */
     font-weight: bold; /* Make name bold */
     font-family: 'Times New Roman', Times, serif /* Use same font as navigation */
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #12e4d9;
+    background: #200264;
 }
 
 /* Main content styling */
