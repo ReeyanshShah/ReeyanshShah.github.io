@@ -269,6 +269,23 @@ footer {
     background-color: #555;
 }
 
+.send-button {
+    background-color: #200264; /* Green */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px; /* Rounded corners */
+}
+
+.send-button:hover {
+    background-color: #200264; /* Darker green on hover */
+}
+
 /* Specific styles for about.html page */
 .about-content {
     max-width: 800px; /* Limit width of content */
