@@ -33,48 +33,49 @@
         </div>        
     </header>
     <main>
-        <section class="project-container">
-            <div class="project-media" style="display: flex; justify-content: center;">
-                <video controls width="400" height="225 border-radius = 25px"> <!-- Adjusted width and height -->
-                    <source src="exoskeletonglove.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="project-description">
-                <h2 style="text-align: center; margin-bottom: 0px;margin-top: 5px;">MIRAGE – Motion Integrated Real-Time Articulated Glove Emulator</h2>
-                <p style="text-align: center; margin-bottom: 0px; margin-top: 0;">Wearable Exoskeleton Glove for Hand Motion Capture<small></small></p>
+     <section class="project-container">
+    <div class="project-media" style="display: flex; justify-content: center;">
+        <video controls width="400" height="225" style="border-radius: 25px;">
+            <source src="exoskeletonglove.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="project-description">
+        <h2 style="text-align: center; margin-bottom: 0px; margin-top: 5px;">MIRAGE – Motion Integrated Real-Time Articulated Glove Emulator</h2>
+        <p style="text-align: center; margin-bottom: 0px; margin-top: 0;"><small>Wearable Exoskeleton Glove for Hand Motion Capture</small></p>
+        <p style="letter-spacing: -0px;">
+            As part of a team project, I helped develop a 3D-printed exoskeleton glove designed to capture and simulate real-time finger movements. The glove uses rotary encoders to measure joint angles and transmits data via Wi-Fi (UDP) using a Raspberry Pi Pico W and a custom PCB with multiplexers.
+            This data is used to drive a 3D hand model in Unity, accurately replicating user finger motions with sub-second latency. The glove supports wireless operation, real-time tracking, and has potential applications in VR gaming, rehabilitation, and robotic control.
+        </p>
+    </div>
+</section>
 
-                <p style="letter-spacing: -0px;">
-As part of a team project, I helped develop a 3D-printed exoskeleton glove designed to capture and simulate real-time finger movements. The glove uses rotary encoders to measure joint angles and transmits data via Wi-Fi (UDP) using a Raspberry Pi Pico W and a custom PCB with multiplexers.
-This data is used to drive a 3D hand model in Unity, accurately replicating user finger motions with sub-second latency. The glove supports wireless operation, real-time tracking, and has potential applications in VR gaming, rehabilitation, and robotic control.
-                </p>                                <!-- Additional details specific to Project 1 -->
-            </div>
-        <!-- Project 1 Container (with video) -->
-        <section class="project-container">
-            <div class="project-media" style="display: flex; justify-content: center;">
-                <video controls width="400" height="225 border-radius = 25px"> <!-- Adjusted width and height -->
-                    <source src="3ddatacollector.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="project-description">
-                <h2 style="text-align: center; margin-bottom: 0px;margin-top: 5px;">3D Data Collector for IPEC</h2>
-                <p style="text-align: center; margin-bottom: 0px; margin-top: 0;"><small>Wadhwani Electronic Lab, Prof. Siddhart Tallur</small></p>
-                <p style="letter-spacing: -0px;">
-                    iPEC is a handheld device designed for instant measurement of rebar diameter and cover thickness in RCC structures. My role involved enhancing a 3D data collector setup, integrating motion control in X, Y, and Z axes using 3D printing and KiCad-designed PCBs. I developed an Arduino-based controller and PyQt GUI for automated scanning and precise data analysis.
-                </p>                                <!-- Additional details specific to Project 1 -->
-            </div>
-        </section>        
-        <section class="project-container">
-            <div class="project-media" style="display: flex; justify-content: center; align-items: center;">
-                <img src="iitbrisc.png" alt="Project 2 Image" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
-            </div>
-            <div class="project-description">
-                <h2 style="text-align: center; margin-bottom: 0px;">IITB-RISC Microprocessor Design</h2>
-                <p style="text-align: center; margin-bottom: 0px; margin-top: 0;"><small>Course Project, EE 309, Prof. Virendra Singh</small></p>
-                <p>We developed a 6-stage pipeline processor to enhance instruction processing throughput and maximize cycle frequency, incorporating stages like Instruction Fetch, Instruction Decode, Register Read, Execute, Memory Access, and Writeback. We implemented advanced features such as a 2-level data forwarding logic and a history bit-based branch predictor to minimize data hazards and improve branch prediction accuracy, ensuring smooth operation without stalls. Additionally, we integrated hazard mitigation units to optimize performance and ensure smooth operation of the pipeline processor. We utilized VHDL modeling to implement the datapath design and control unit, and simulated the design using Quartus.</p>
-                <!-- Additional details specific to Project 2 -->
-            </div>
-        </section>        
+<section class="project-container">
+    <div class="project-media" style="display: flex; justify-content: center;">
+        <video controls width="400" height="225" style="border-radius: 25px;">
+            <source src="3ddatacollector.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="project-description">
+        <h2 style="text-align: center; margin-bottom: 0px; margin-top: 5px;">3D Data Collector for IPEC</h2>
+        <p style="text-align: center; margin-bottom: 0px; margin-top: 0;"><small>Wadhwani Electronic Lab, Prof. Siddhart Tallur</small></p>
+        <p style="letter-spacing: -0px;">
+            iPEC is a handheld device designed for instant measurement of rebar diameter and cover thickness in RCC structures. My role involved enhancing a 3D data collector setup, integrating motion control in X, Y, and Z axes using 3D printing and KiCad-designed PCBs. I developed an Arduino-based controller and PyQt GUI for automated scanning and precise data analysis.
+        </p>
+    </div>
+</section>
 
+<section class="project-container">
+    <div class="project-media" style="display: flex; justify-content: center; align-items: center;">
+        <img src="iitbrisc.png" alt="Project Image" style="max-width: 100%; max-height: 100%; display: block; margin: auto;">
+    </div>
+    <div class="project-description">
+        <h2 style="text-align: center; margin-bottom: 0px;">IITB-RISC Microprocessor Design</h2>
+        <p style="text-align: center; margin-bottom: 0px; margin-top: 0;"><small>Course Project, EE 309, Prof. Virendra Singh</small></p>
+        <p>
+            We developed a 6-stage pipeline processor to enhance instruction processing throughput and maximize cycle frequency, incorporating stages like Instruction Fetch, Instruction Decode, Register Read, Execute, Memory Access, and Writeback. We implemented advanced features such as a 2-level data forwarding logic and a history bit-based branch predictor to minimize data hazards and improve branch prediction accuracy, ensuring smooth operation without stalls. Additionally, we integrated hazard mitigation units to optimize performance and ensure smooth operation of the pipeline processor. We utilized VHDL modeling to implement the datapath design and control unit, and simulated the design using Quartus.
+        </p>
+    </div>
+</section>
     </main>
 
     <footer>
